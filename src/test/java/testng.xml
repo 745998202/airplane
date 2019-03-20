@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="白盒测试" verbose="1" >
+    <test name="简单测试" preserve-order="true">
+        <classes>
+            <class name="com.example.demo.FirstTest">
+                <methods>
+                    <include name="First3"/>
+                    <include name="First1"/>
+                    <include name="First2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
