@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="F:/workspace/IDEA Project/SouthernAirline (1)/airplane/src/test/java/com/example/demo/FirstTest.java"><classes/></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="F:/workspace/IDEA Project/SouthernAirline (1)/airplane/src/test/java/com/example/demo/test"><classes><class name="com.example.demo.test.FirstTest"><methods><include name="testCase"/><include name="testCase1"/><include name="testCase2"/></methods></class></classes></test></suite>

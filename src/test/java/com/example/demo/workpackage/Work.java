@@ -9,7 +9,7 @@ public class Work {//用于计算托运行李票价的类
 
         //参数说明： 1. 当日经济舱票价 单位 / rmb   2. 舱位类型  3. 行李数量  4. 不占座婴儿数量
         setNowdaysMoney(nowdaysMoney);//设置当日的经济舱航班的价格
-        if(bag_num < 0 || bag_num > 5 || type < 0 || type > 3 || nowdaysMoney < 0)
+        if(bag_num < 0 || bag_num > 5 || type < 0 || type > 3 || nowdaysMoney <= 0)
         {
             return -1; //有不符合规定的输入
         }
@@ -53,7 +53,12 @@ public class Work {//用于计算托运行李票价的类
         money = now_weight * 0.015 * nowdaysMoney;
         return money;
     }
-
+    public static void testFunction(int[] testPara){
+        int len = testPara.length;
+        for(int i = 0; i < len; i ++){
+            System.out.println(testPara[i]);
+        }
+    }
     public static double get_no_1(int type , int bag_num ,bag[] bags)    //日本，美洲，澳新，俄罗斯，迪拜，新加坡
     {
         if(bag_num < 0 || bag_num > 5 || type < 0 || type > 3)
@@ -183,7 +188,7 @@ public class Work {//用于计算托运行李票价的类
                     }
                     if(bags[i].getChicun()>158)
                         money += 1000;
-                    if(bags[i].getZhong()>32)
+                    if(bags[i].getZhong()>23)
                         money += 3000;
                 }
                 break;
@@ -197,7 +202,7 @@ public class Work {//用于计算托运行李票价的类
                     }
                     if(bags[i].getChicun()>158)
                         money += 1000;
-                    if(bags[i].getZhong()>32)
+                    if(bags[i].getZhong()>23)
                         money += 3000;
                 }
                 break;

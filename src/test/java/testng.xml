@@ -2,11 +2,22 @@
 <suite name="白盒测试" verbose="1" >
     <test name="简单测试" preserve-order="true">
         <classes>
-            <class name="com.example.demo.FirstTest">
+            <class name="com.example.demo.test.FirstTest">
                 <methods>
-                    <include name="First3"/>
-                    <include name="First1"/>
-                    <include name="First2"/>
+                    <include name="onebag"/>
+                    <include name="twobag"/>
+                </methods>
+            </class>
+            <class name="com.example.demo.test.SecondTest">
+                <methods>
+                    <include name="onebag"/>
+                    <include name="twobag"/>
+                </methods>
+            </class>
+            <class name="com.example.demo.test.ThirdTest">
+                <methods>
+                    <include name="onebag"/>
+                    <include name="twobag"/>
                 </methods>
             </class>
         </classes>
